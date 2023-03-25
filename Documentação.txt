@@ -1,0 +1,47 @@
+herança extend
+
+<button class="btn btn-orange">button</button>
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.btn-orange {
+    @extend .btn;
+    background: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+variáveis e import
+
+
+@import 'button.scss'
+
+
+
+var
+criar o imports no style principal
+@import 'variables.scss';
+
+
+na var 
+$color-orange: white;
+
+
+no button ou aonde desejado
+ background: $color-orange;
